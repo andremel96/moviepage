@@ -1,0 +1,59 @@
+.container {
+    width: 100%;
+    text-align: center;
+    
+    /* By setting this div's display to flex, 
+       I get access to Flexbox's properties. 
+       I can now use these properties to manipulate
+       the children of this div. */
+    display: flex;
+    
+    /* This is will center this div's children to the left. */
+    justify-content: left;
+    
+    /* flex-wrap acts much like a code editor's soft wrapping feature. */
+    flex-wrap: wrap;
+  }
+  
+  .movie__card {
+    margin: 1em;
+    background: black;
+    text-align: center;
+    font-family: monospace;
+    color: white;
+    font-weight: bolder;
+    
+    /* Children whose parent has `display: flex` also gain access to Flexbox 
+       properties. */
+    flex: 0;
+    
+    /* By setting width as a percentage and having a min-width property, you 
+       enable your movie cards to have a larger width when the viewport is 
+       larger and prevent them from getting too small when the viewport 
+       is smaller, such as on a mobile viewport. */
+    width: 15%;
+    min-width: 110px;
+    
+    height: 200px;
+    padding-bottom: 30px;
+  }
+  img{
+      margin-top: 5px;
+  }
+
+  .movie_date{
+      color: red;
+  }
+
+  .tvshow_date{
+    color:blue;
+}
+  
+  .movie__image{
+      height: 150px;
+      width: 100px;
+  }
+  
+  .movie__title{
+    margin-bottom: 1em;
+  }
